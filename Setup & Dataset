@@ -1,0 +1,16 @@
+#Setup & Dataset
+# requirements.txt
+pandas numpy scikit-learn imbalanced-learn joblib fastapi uvicorn streamlit
+
+Download creditcard.csv from Kaggle’s “Credit Card Fraud Detection” (EU dataset 2013)
+
+#Real-Time Simulation (Optional)
+Flow:
+
+Train model → train_model.py
+
+Start FastAPI → uvicorn api.app:app --reload
+
+Start Streamlit dashboard → streamlit run dashboard/app.py
+
+Click “Simulate Transaction” to trigger predictions live.
